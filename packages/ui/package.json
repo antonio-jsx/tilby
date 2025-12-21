@@ -10,14 +10,15 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2",
     "@tilby/typescript-config": "workspace:*",
-    "@types/node": "^22.15.3",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
-    "typescript": "^5.9.2"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
   },
   "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   }
 }
