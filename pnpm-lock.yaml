@@ -197,6 +197,9 @@ importers:
       '@tilby/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      '@turbo/gen':
+        specifier: 2.7.1
+        version: 2.7.1(@swc/core@1.15.7)(@types/node@20.19.27)(typescript@5.9.2)
       '@types/node':
         specifier: ^20
         version: 20.19.27
@@ -3370,6 +3373,26 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
+  '@turbo/gen@2.7.1(@swc/core@1.15.7)(@types/node@20.19.27)(typescript@5.9.2)':
+    dependencies:
+      '@turbo/workspaces': 2.7.1
+      commander: 10.0.0
+      fs-extra: 10.1.0
+      inquirer: 8.2.4
+      minimatch: 9.0.0
+      node-plop: 0.26.3
+      picocolors: 1.0.1
+      proxy-agent: 6.5.0
+      ts-node: 10.9.2(@swc/core@1.15.7)(@types/node@20.19.27)(typescript@5.9.2)
+      update-check: 1.5.4
+      validate-npm-package-name: 5.0.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - supports-color
+      - typescript
+
   '@turbo/gen@2.7.1(@swc/core@1.15.7)(@types/node@24.10.4)(typescript@5.9.2)':
     dependencies:
       '@turbo/workspaces': 2.7.1
@@ -4737,6 +4760,26 @@ snapshots:
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
+
+  ts-node@10.9.2(@swc/core@1.15.7)(@types/node@20.19.27)(typescript@5.9.2):
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.12
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.19.27
+      acorn: 8.15.0
+      acorn-walk: 8.3.4
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 5.9.2
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    optionalDependencies:
+      '@swc/core': 1.15.7
 
   ts-node@10.9.2(@swc/core@1.15.7)(@types/node@24.10.4)(typescript@5.9.2):
     dependencies:
