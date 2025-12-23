@@ -1,24 +1,2 @@
 export { db } from './database';
-export {
-  and,
-  asc,
-  count,
-  desc,
-  eq,
-  getTableColumns,
-  gt,
-  gte,
-  ilike,
-  inArray,
-  isNull,
-  like,
-  lt,
-  lte,
-  max,
-  min,
-  ne,
-  not,
-  or,
-  sql,
-  sum,
-} from 'drizzle-orm';
+export * from 'drizzle-orm/sql';
