@@ -17,6 +17,12 @@
       "cache": false,
       "persistent": true
     },
+    "clean": {
+      "cache": false
+    },
+    "//#clean": {
+      "cache": false
+    },
     "db:generate": {
       "outputs": []
     },

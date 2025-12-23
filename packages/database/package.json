@@ -9,6 +9,7 @@
     "./schemas/*": "./src/schemas/*.ts"
   },
   "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
     "lint": "biome check .",
     "check-types": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
@@ -20,14 +21,14 @@
     "drizzle-orm": "0.45.1",
     "pg": "8.16.3",
     "postgres": "3.4.7",
-    "zod": "4.1.13"
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@tilby/typescript-config": "workspace:*",
-    "@types/node": "^24",
+    "@types/node": "catalog:",
     "@types/pg": "8.15.6",
     "drizzle-kit": "0.31.8",
     "tsx": "4.21.0",
-    "typescript": "^5"
+    "typescript": "catalog:"
   }
 }

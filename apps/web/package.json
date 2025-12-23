@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "clean": "git clean -xdf .next .cache .turbo dist node_modules",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -16,19 +17,19 @@
     "@tilby/database": "workspace:*",
     "@tilby/i18n": "workspace:*",
     "@tilby/ui": "workspace:*",
-    "next": "16.1.0",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "next": "16.1.1",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2",
-    "@tailwindcss/postcss": "4.1.18",
+    "@biomejs/biome": "catalog:",
+    "@tailwindcss/postcss": "catalog:",
     "@tilby/typescript-config": "workspace:*",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
     "babel-plugin-react-compiler": "1.0.0",
-    "tailwindcss": "4.1.18",
-    "typescript": "^5"
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
   }
 }

@@ -2,6 +2,8 @@
   "name": "tilby",
   "private": true,
   "scripts": {
+    "clean": "git clean -xdf node_modules .turbo",
+    "clean:workspaces": "turbo run clean",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
@@ -10,13 +12,13 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2",
+    "@biomejs/biome": "catalog:",
     "@tilby/typescript-config": "workspace:*",
-    "@turbo/gen": "2.7.1",
+    "@turbo/gen": "catalog:",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "turbo": "^2.7.1",
-    "typescript": "^5"
+    "typescript": "catalog:"
   },
   "pnpm": {
     "overrides": {

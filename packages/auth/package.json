@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
     "lint": "biome check .",
     "check-types": "tsc --noEmit"
   },
@@ -15,12 +16,12 @@
   },
   "dependencies": {
     "@tilby/database": "workspace:*",
-    "better-auth": "1.4.6"
+    "better-auth": "1.4.8"
   },
   "devDependencies": {
     "@tilby/typescript-config": "workspace:*",
-    "@types/node": "^24",
-    "typescript": "^5"
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "next": "^16 || ^15 || ^14"
